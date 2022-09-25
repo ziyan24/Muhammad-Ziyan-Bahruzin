@@ -1,0 +1,34 @@
+<?php
+
+$negara = ["indonesia", "singapura", "malaysia", "brunei", "thailand","laos","filipina","myanmar"];
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 4 b</title>
+</head>
+<body>
+    <p>
+        <b>Daftar Negara Asean Awal : <br></b>
+    <?php
+    for($i = 0; $i < 4; $i++){
+        echo "<li>$negara[$i]</li>";
+    }
+    ?>
+    </p>
+    <p>
+        <b>Daftar Negara Asean Baru : <br></b>
+        <?php
+        for ($i = 0; $i < count($negara); $i++){
+            echo "<li>$negara[$i]</li>";
+        }
+        ?>
+    </p>
+    
+</body>
+</html>
